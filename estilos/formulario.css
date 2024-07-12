@@ -1,0 +1,75 @@
+main {
+    padding: 20px;
+}
+
+section h1 {
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 3rem 3rem 3rem 6rem 3rem ;
+    grid-template-areas: "nome sobrenome"
+                         "email telefone"
+                         "endereco endereco"
+                         "mensagem mensagem"
+                         "enviar enviar";
+    gap: 12px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nome {
+    grid-area: nome;
+    background-color: rgb(255, 247, 237);
+}
+
+.sobrenome {
+    grid-area: sobrenome;
+    background-color: rgb(255, 247, 237);
+}
+
+input[type="email"] {
+    grid-area: email;
+    background-color: rgb(255, 247, 237);
+}
+
+input[type="tel"] {
+    grid-area: telefone;
+    background-color: rgb(255, 247, 237);
+}
+
+.endereco {
+    grid-area: endereco;
+    background-color: rgb(221, 207, 188);
+}
+
+textarea {
+    grid-area: mensagem;
+    background-color: rgb(204, 194, 180);
+}
+
+form button {
+    grid-area: enviar;
+    justify-self: center;
+    width: 100px;
+    background-color: rgb(65, 20, 0);
+    color: #fff;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+form button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
